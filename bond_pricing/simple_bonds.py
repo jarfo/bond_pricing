@@ -490,7 +490,7 @@ def _import_isda_daycounters():
          Whether isda_daycounters unavailable (False)
 
     """
-    from isda_daycounters import (actual360, actual365,
+    from .isda_daycounters import (actual360, actual365,
                                   actualactual, thirty360,
                                   thirtyE360, thirtyE360ISDA)
     daycounters = {x.name: x for x in (actual360, actual365,
